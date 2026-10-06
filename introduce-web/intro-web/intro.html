@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Cá Nhân - Giới Thiệu Bản Thân</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-container">
+            <a href="#about" class="logo">My<span>Portfolio</span></a>
+            
+            <nav class="navbar" id="navbar">
+                <a href="#about" class="nav-link">Giới thiệu</a>
+                <a href="#skills" class="nav-link">Kỹ năng</a>
+                <a href="#projects" class="nav-link">Dự án</a>
+            </nav>
+
+            <div class="header-actions">
+                <button id="theme-toggle" class="btn-theme" title="Đổi giao diện">🌙</button>
+                <button class="hamburger" id="hamburger" aria-label="Menu">&#9776;</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="section about-section">
+            <div class="container about-container">
+                <div class="about-avatar">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80" alt="Ảnh đại diện">
+                </div>
+                <div class="about-text">
+                    <h1>Xin chào, tôi là <span class="highlight">Đặng Việt Duy</span></h1>
+                    <p class="role">Sinh viên CNTT</p>
+                    <p class="desc">
+                        Tôi đam mê xây dựng các giao diện trang web trực quan, thân thiện và tối ưu trải nghiệm người dùng. 
+                        Luôn tìm tòi, học hỏi các công nghệ web mới nhất để hoàn thiện kỹ năng lập trình.
+                    </p>
+                    <div class="about-btn">
+                        <a href="#projects" class="btn btn-secondary">Xem dự án</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section skills-section">
+            <div class="container">
+                <h2 class="section-title">Kỹ Năng Cá Nhân</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3>HTML5 & CSS3</h3>
+                        <p>Xây dựng khung chuẩn ngữ nghĩa, Flexbox, Grid, Responsive Design.</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>JavaScript (ES6+)</h3>
+                        <p>DOM Manipulation, Event Handling, Fetch API, Async/Await.</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Git & GitHub</h3>
+                        <p>Quản lý mã nguồn phiên bản, làm việc cộng tác qua nhánh (branching).</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>UI/UX & Figma</h3>
+                        <p>Đọc bản vẽ thiết kế, chuyển đổi wireframe thành giao diện web thực tế.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <h2 class="section-title">Dự Án Nổi Bật</h2>
+                
+                <div class="project-filter">
+                    <button class="filter-btn active" data-filter="all">Tất cả</button>
+                    <button class="filter-btn" data-filter="html-css">HTML/CSS</button>
+                    <button class="filter-btn" data-filter="javascript">JavaScript</button>
+                </div>
+
+                <div class="projects-grid" id="projects-grid">
+                    <div class="project-card" data-category="html-css">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=400&q=80" alt="Website Giới thiệu sản phẩm">
+                        <div class="project-info">
+                            <span class="tag">HTML/CSS</span>
+                            <h3>Trang Giới Thiệu Sản Phẩm</h3>
+                            <p>Xây dựng trang landing page giới thiệu công nghệ với bố cục Flexbox và Grid hoàn chỉnh.</p>
+                            <a href="#" class="project-link">Xem chi tiết &rarr;</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="javascript">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=400&q=80" alt="Ứng dụng Quản lý công việc">
+                        <div class="project-info">
+                            <span class="tag">JavaScript</span>
+                            <h3>Ứng Dụng Todo List</h3>
+                            <p>Ứng dụng quản lý việc cần làm hàng ngày với chức năng lưu trữ dữ liệu trên LocalStorage.</p>
+                            <a href="#" class="project-link">Xem chi tiết &rarr;</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="javascript">
+                        <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=400&q=80" alt="Ứng dụng Đố vui kiến thức">
+                        <div class="project-info">
+                            <span class="tag">JavaScript</span>
+                            <h3>Quiz Game Trực Tuyến</h3>
+                            <p>Trò chơi câu hỏi trắc nghiệm tương tác với tính năng tính điểm tự động và đếm ngược thời gian.</p>
+                            <a href="#" class="project-link">Xem chi tiết &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; <span id="current-year"></span> Đặng Việt Duy. All rights reserved.</p>
+            <p>Học viện Công nghệ Bưu chính Viễn thông (PTIT)</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
